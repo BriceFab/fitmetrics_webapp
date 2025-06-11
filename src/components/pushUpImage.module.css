@@ -1,0 +1,15 @@
+.wrapper {
+    @apply relative w-[350px] h-[200px];
+}
+
+@screen tablet {
+    .wrapper {
+        @apply w-[150px] h-[120px];
+    }
+}
+
+@screen desktop {
+    .wrapper {
+        @apply w-[250px] h-[140px];
+    }
+}

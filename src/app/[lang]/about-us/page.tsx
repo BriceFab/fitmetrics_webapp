@@ -1,6 +1,8 @@
 import React from "react";
 import { getDictionary } from '@/dictionaries'
 import LocalizedLink from "@/components/localized_link";
+import Image from 'next/image'
+import PushUpImage from "@/components/PushupImage";
 
 export default async function Page({
                                      params,
@@ -26,6 +28,22 @@ export default async function Page({
           >
               Home
           </LocalizedLink>
+
+          <Image
+              src="/push-up.png"
+              width={250}
+              height={140}
+              alt="Push up"
+          />
+
+          <Image
+              src="https://i3.ytimg.com/vi_webp/u8BG4_QObPo/maxresdefault.webp"
+              width={250}
+              height={140}
+              alt="Push up"
+          />
+
+          <PushUpImage />
 
           <section className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-5xl w-full">
               <div
