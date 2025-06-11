@@ -1,6 +1,6 @@
 'use client';
 
-import Link, { LinkProps } from 'next/link';
+import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { UrlObject } from 'url';
 
