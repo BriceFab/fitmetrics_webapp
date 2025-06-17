@@ -12,7 +12,12 @@ export default async function Page({
     const { lang } = await params
     const dict = await getDictionary(lang)
 
-  return (
+    const handleImageError = (src: string) => () => {
+        console.error(`Erreur de chargement de l’image : ${src}`);
+        alert(`Échec du chargement de l’image : ${src}`);
+    };
+
+    return (
       <div
           className="min-h-screen py-20 px-6 sm:px-16 flex flex-col items-center bg-white dark:bg-black text-black dark:text-white">
           <h1 className="text-4xl font-bold mb-8 text-center">About Us</h1>
@@ -34,6 +39,7 @@ export default async function Page({
               width={250}
               height={140}
               alt="Push up"
+              onError={handleImageError('/push-up.png')}
           />
 
           <Image
@@ -41,6 +47,7 @@ export default async function Page({
               width={250}
               height={140}
               alt="Push up"
+              onError={handleImageError('https://i3.ytimg.com/vi_webp/u8BG4_QObPo/maxresdefault.webp')}
           />
 
           <PushUpImage />
