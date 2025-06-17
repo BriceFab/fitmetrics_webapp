@@ -11,11 +11,6 @@ export default async function Page({
     const { lang } = await params
     const dict = await getDictionary(lang)
 
-    const handleImageError = (src: string) => () => {
-        console.error(`Erreur de chargement de l’image : ${src}`);
-        alert(`Échec du chargement de l’image : ${src}`);
-    };
-
     return (
       <div
           className="min-h-screen py-20 px-6 sm:px-16 flex flex-col items-center bg-white dark:bg-black text-black dark:text-white">
