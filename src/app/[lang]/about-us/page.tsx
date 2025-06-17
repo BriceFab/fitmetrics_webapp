@@ -34,22 +34,6 @@ export default async function Page({
               Home
           </LocalizedLink>
 
-          <Image
-              src="/push-up.png"
-              width={250}
-              height={140}
-              alt="Push up"
-              onError={handleImageError('/push-up.png')}
-          />
-
-          <Image
-              src="https://i3.ytimg.com/vi_webp/u8BG4_QObPo/maxresdefault.webp"
-              width={250}
-              height={140}
-              alt="Push up"
-              onError={handleImageError('https://i3.ytimg.com/vi_webp/u8BG4_QObPo/maxresdefault.webp')}
-          />
-
           <PushUpImage />
 
           <section className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-5xl w-full">
