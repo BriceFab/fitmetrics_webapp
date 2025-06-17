@@ -1,7 +1,6 @@
 import React from "react";
 import { getDictionary } from '@/dictionaries'
 import LocalizedLink from "@/components/localized_link";
-import Image from 'next/image'
 import PushUpImage from "@/components/PushupImage";
 
 export default async function Page({
